@@ -38,7 +38,7 @@ public class AdminController {
 	public static String ChangePassword(@RequestBody Admin a) {
 		admin.setUsername(a.getUsername());
 		admin.setPassword(a.getPassword());
-		return admin.toString();
+		return "Password Updated";
 	}
 	@GetMapping("/ListUsers")
 	public List<User> getAllUser(){
